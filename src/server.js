@@ -52,9 +52,6 @@ mongoose
   .then(() => console.log("MongoDB Connected ..."))
   .catch((err) => console.log(err));
 
-//run script every two minutes using cron schudele
-//cron.schedule('*/2 * * * *', () => {
-
 //Get Api data
 const {
   staffresult,
@@ -427,7 +424,5 @@ async function StoreData() {
 
 //Function to store and update sms database
 StoreData();
-
-//})
 
 app.listen(4000);
